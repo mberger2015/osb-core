@@ -4,10 +4,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.evoila.cf.broker</groupId>
-    <artifactId>core-parent</artifactId>
+    <artifactId>model</artifactId>
     <version>1.2.0</version>
     <packaging>pom</packaging>
-    <name>core-parent</name>
+    <name>model</name>
 
     <parent>
         <groupId>de.evoila.cf.broker</groupId>
@@ -16,9 +16,30 @@
         <version>1.2.0</version>
     </parent>
 
-    <modules>
-        <module>core</module>
-        <module>model</module>
-    </modules>
+    <properties>
+        <parent.version>1.2.0</parent.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>2.2.10</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>

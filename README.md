@@ -1,2 +1,3 @@
-# cf-service-broker-core
-This project provides core functionalities for Cloud Foundry Service Broker. It needs deployment services and a persistence service (see https://github.com/evoila/cf-service-broker-deployment and https://github.com/evoila/cf-service-broker-persistence) as well as a concrete implementation of service binding routines for a concrete service (for examples see https://github.com/evoila/cf-service-broker-example and https://github.com/evoila/cf-service-broker-elasticsearch).
+# osb-model
+
+This project is a fork from the osb-core repository with the goal to seperate core and model.

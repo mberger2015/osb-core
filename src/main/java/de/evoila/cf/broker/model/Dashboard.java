@@ -16,6 +16,13 @@ public class Dashboard {
 	@JsonProperty("auth_endpoint")
 	private String authEndpoint;
 
+	public Dashboard(){ }
+
+	public Dashboard(String url, String authEndpoint) {
+		this.url = url;
+		this.authEndpoint = authEndpoint;
+	}
+
 	public String getUrl() {
 		return url;
 	}

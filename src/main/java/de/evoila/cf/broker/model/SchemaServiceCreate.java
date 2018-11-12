@@ -7,6 +7,8 @@ public class SchemaServiceCreate {
 	@JsonProperty(value="parameters", required=false)
 	private SchemaParameters parameters;
 
+	public SchemaServiceCreate() {	}
+
 	public SchemaParameters getParameters() {
 		return parameters;
 	}

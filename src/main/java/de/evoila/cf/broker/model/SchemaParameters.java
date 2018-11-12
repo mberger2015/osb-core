@@ -31,8 +31,7 @@ public class SchemaParameters {
 	private Map<String, SchemaProperty> properties;
 
 
-	public SchemaParameters() {
-	}
+	public SchemaParameters() { }
 
 	public SchemaParameters(String schema, String type) {
 		this.schema = schema;

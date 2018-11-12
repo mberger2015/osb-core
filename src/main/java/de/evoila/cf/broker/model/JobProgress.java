@@ -29,12 +29,9 @@ public class JobProgress implements BaseEntity<String> {
 	
 	private String description;
 	
-	public JobProgress() {
-		super();
-	}
+	public JobProgress() { }
 
 	public JobProgress(String serviceInstanceId, String progress) {
-		super();
 		this.id = serviceInstanceId;
 		this.state = progress;
 		this.date = new Date();

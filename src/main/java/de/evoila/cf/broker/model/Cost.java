@@ -8,6 +8,13 @@ public class Cost {
 
     private String unit;
 
+    public Cost() { }
+
+    public Cost(Map<String, Float> amount, String unit) {
+        this.amount = amount;
+        this.unit = unit;
+    }
+
     public Map<String, Float> getAmount() {
         return amount;
     }

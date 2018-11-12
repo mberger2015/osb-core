@@ -26,18 +26,14 @@ public class JobProgressResponse {
 	@JsonProperty("description")
 	private String description;
 
-	public JobProgressResponse() {
-		super();
-	}
+	public JobProgressResponse() {	}
 	
 	public JobProgressResponse(JobProgress jobProgress) {
-		super();
 		this.state = jobProgress.getState();
 		this.description = jobProgress.getDescription();
 	}
 
 	public JobProgressResponse(String state, String description) {
-		super();
 		this.state = state;
 		this.description = description;
 	}

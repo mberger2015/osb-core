@@ -4,17 +4,17 @@ import de.evoila.cf.broker.model.backup.enums.BackupType;
 
 public class EndpointCredential {
 
-    String serviceInstanceId;
+    private String serviceInstanceId;
 
-    String hostname;
+    private String hostname;
 
-    int port;
+    private int port;
 
-    String username;
+    private String username;
 
-    String password;
+    private String password;
 
-    BackupType type;
+    private BackupType type;
 
     public String getServiceInstanceId() {
         return serviceInstanceId;

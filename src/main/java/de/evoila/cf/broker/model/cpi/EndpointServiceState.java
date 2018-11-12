@@ -20,7 +20,6 @@ public class EndpointServiceState {
 	private String information;
 	
 	public EndpointServiceState(String identifier, AvailabilityState state, String information) {
-		super();
 		this.identifier = identifier;
 		this.date = new Date();
 		this.state = state;
@@ -28,7 +27,6 @@ public class EndpointServiceState {
 	}
 	
 	public EndpointServiceState(String identifier, AvailabilityState state) {
-		super();
 		this.identifier = identifier;
 		this.date = new Date();
 		this.state = state;

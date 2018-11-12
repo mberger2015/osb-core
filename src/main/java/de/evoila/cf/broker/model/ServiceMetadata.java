@@ -22,6 +22,8 @@ public class ServiceMetadata {
     @JsonProperty("supportUrl")
     private String supportUrl;
 
+    public ServiceMetadata() { }
+
     public String getDisplayName() {
         return displayName;
     }

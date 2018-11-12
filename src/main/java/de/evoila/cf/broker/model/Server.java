@@ -9,6 +9,8 @@ public class Server {
 
     private String identifier;
 
+    public Server() { }
+
     public String getUrl() {
         return url;
     }

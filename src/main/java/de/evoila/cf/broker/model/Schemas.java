@@ -10,6 +10,8 @@ public class Schemas {
 	@JsonProperty(value="service_binding", required=false)
 	private SchemaServiceBinding serviceBinding;
 
+	public Schemas() { }
+
 	public SchemaServiceInstance getServiceInstance() {
 		return serviceInstance;
 	}
@@ -26,6 +28,4 @@ public class Schemas {
 		this.serviceBinding = serviceBinding;
 	}
 	
-	
-
 }

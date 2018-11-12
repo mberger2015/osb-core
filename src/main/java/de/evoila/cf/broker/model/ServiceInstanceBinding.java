@@ -31,7 +31,6 @@ public class ServiceInstanceBinding implements BaseEntity<String> {
 	private List<VolumeMount> volumeMounts;
 
 	public ServiceInstanceBinding() {
-		super();
 	}
 
     public ServiceInstanceBinding(String id, String serviceInstanceId, Map<String, Object> credentials) {

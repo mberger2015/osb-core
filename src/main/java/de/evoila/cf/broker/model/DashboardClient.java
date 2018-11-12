@@ -18,8 +18,12 @@ public class DashboardClient {
 	@JsonProperty("redirect_uri")
 	private String redirectUri;
 	
-	public DashboardClient() {
-		super();
+	public DashboardClient() { }
+
+	public DashboardClient(String id, String secret, String redirectUri) {
+		this.id = id;
+		this.secret = secret;
+		this.redirectUri = redirectUri;
 	}
 
 	public String getId() {

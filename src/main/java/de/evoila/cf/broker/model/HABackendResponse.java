@@ -14,21 +14,14 @@ public class HABackendResponse {
 
 	private String identifier;
 
-	/**
-	 * @param ip
-	 * @param port
-	 * @param identifier
-	 */
+	public HABackendResponse() { }
+
 	public HABackendResponse(String ip, int port, String identifier) {
 		this.ip = ip;
 		this.port = port;
 		this.identifier = identifier;		
 	}
 	
-	public HABackendResponse() {
-		
-	}
-
 	public String getIp() {
 		return ip;
 	}

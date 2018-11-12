@@ -1,50 +1,35 @@
-/**
- * 
- */
 package de.evoila.cf.broker.model;
 
 /**
  * @author Christian Brinker, evoila.
- *
  */
 public class ServerAddress {
-	
 
-	private String name;
+    private String name;
 
-	private String ip;
+    private String ip;
 
-	private int port;
+    private int port;
 
-	public ServerAddress() {
-		super();
-	}
+    public ServerAddress() { }
 
+    public ServerAddress(String name) {
+        this(name, null);
+    }
 
-	public ServerAddress(String name) {
-		super();
-		this.name = name;
-	}
+    public ServerAddress(String name, String ip) {
+        this(name, ip, 0);
+    }
 
-	public ServerAddress(String name, String ip) {
-		super();
-		this.name = name;
-		this.ip = ip;
-	}
+    public ServerAddress(ServerAddress address) {
+        this(address.name, address.ip, address.port);
+    }
 
-	public ServerAddress(String name, String ip, int port) {
-		super();
-		this.name = name;
-		this.ip = ip;
-		this.port = port;
-	}
-
-	public ServerAddress(ServerAddress address) {
-		super();
-		this.name = address.name;
-		this.ip = address.ip;
-		this.port = address.port;
-	}
+    public ServerAddress(String name, String ip, int port) {
+        this.name = name;
+        this.ip = ip;
+        this.port = port;
+    }
 
     public String getName() {
         return name;

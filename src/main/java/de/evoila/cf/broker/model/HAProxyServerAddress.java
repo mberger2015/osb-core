@@ -19,20 +19,6 @@ public class HAProxyServerAddress extends ServerAddress {
 		super();
 	}
 
-	public HAProxyServerAddress(ServerAddress serverAddress, Mode mode, List<String> options) {
-		super(serverAddress);
-		this.mode = mode.toString();
-		this.options= options;
-	}
-
-	public HAProxyServerAddress(HAProxyServerAddress haProxyServerAddress, String name) {
-		this.setIp(haProxyServerAddress.getIp());
-		this.setPort(haProxyServerAddress.getPort());
-		this.setName(name);
-		this.setMode(haProxyServerAddress.getMode());
-		this.setOptions(haProxyServerAddress.getOptions());
-	}
-
 	public HAProxyServerAddress(String name) {
 		super(name);
 	}
@@ -49,6 +35,22 @@ public class HAProxyServerAddress extends ServerAddress {
 		super(name, ip, port);
 		this.mode = mode;
 	}
+
+	public HAProxyServerAddress(ServerAddress serverAddress, Mode mode, List<String> options) {
+		super(serverAddress);
+		this.mode = mode.toString();
+		this.options= options;
+	}
+
+	public HAProxyServerAddress(HAProxyServerAddress haProxyServerAddress, String name) {
+		this.setIp(haProxyServerAddress.getIp());
+		this.setPort(haProxyServerAddress.getPort());
+		this.setName(name);
+		this.setMode(haProxyServerAddress.getMode());
+		this.setOptions(haProxyServerAddress.getOptions());
+	}
+
+
 
 	public String getMode() {
 		return mode;
